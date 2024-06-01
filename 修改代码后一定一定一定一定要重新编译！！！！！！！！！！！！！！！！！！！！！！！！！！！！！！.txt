@@ -1,0 +1,6 @@
+pip install -e .
+python setup.py develop
+
+
+注意
+missing keys是由于修改了网络后，存在着原预训练模型没有的key，不必理会

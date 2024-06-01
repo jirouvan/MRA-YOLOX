@@ -1,0 +1,55 @@
+bowlor
+appleor
+mouseor
+keyboardor
+bananaor
+carrotmi
+cupmi
+orangemi
+chairmi
+bookmi
+bowlmi
+applemi
+mousemi
+keyboardmi
+bananami
+carrotmi
+cupmi
+orangemi
+chairmi
+bookmi
+
+'bowlor', 'appleor', 'mouseor', 'keyboardor', 'bananaor', 'bowlmi', 'applemi', 'mousemi', 'keyboardmi', 'bananami'
+
+bowl
+apple
+mouse
+keyboard
+banana
+carrot
+cup
+orange
+chair
+book
+
+[{'id': 0, 'name': 'bowlor'},
+{'id': 1, 'name': 'appleor'},
+{'id': 2, 'name': 'mouseor'},
+{'id': 3, 'name': 'keyboardor'},
+{'id': 4, 'name': 'bananaor'},
+{'id': 5, 'name': 'carrotor'},
+{'id': 6, 'name': 'cupor'},
+{'id': 7, 'name': 'orangeor'},
+{'id': 8, 'name': 'chairor'},
+{'id': 9, 'name': 'bookor'},
+{'id': 10, 'name': 'bowlmi'},
+{'id': 11, 'name': 'applemi'},
+{'id': 12, 'name': 'mousemi'},
+{'id': 13, 'name': 'keyboardmi'},
+{'id': 14, 'name': 'bananami'},
+{'id': 15, 'name': 'carrotmi'},
+{'id': 16, 'name': 'cupmi'},
+{'id': 17, 'name': 'orangemi'},
+{'id': 18, 'name': 'chairmi'},
+{'id': 19, 'name': 'bookmi'},
+]

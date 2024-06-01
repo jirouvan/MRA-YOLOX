@@ -1,0 +1,46 @@
+拎出一张图进行预测：python demo\image_demo.py demo\demo.jpg configs\faster_rcnn\faster_rcnn_r50_fpn_1x_coco.py checkpoints\faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth
+
+训练步骤
+python tools\train.py configs\mask_rcnn\mask_rcnn_r101_fpn_1x_coco.py --work-dir jiyan（jiyan为工作目录）
+运行后立即中断则在工作目录有一执行py文件
+py中有
+训练学习率lr
+类别数num_classes
+优化器optimizer
+几个世代保存一次模型checkpoint_config每个都输出
+几次迭代输出一次日志log_config改成5
+eval也要改成1次
+...
+...
+改动完事执行
+python tools\train.py jiyan\mask_rcnn_r101_fpn_1x_coco.py
+开始训练
+
+评估
+日志可视化
+python tools\analysis_tools\analyze_logs.py plot_curve jiyan\20231111_172249\vis_data\scalars.json --keys loss_cls loss_bbox --legend cls bbox
+在相同图像中比较两次运行结果的 bbox mAP
+python tools/analysis_tools/analyze_logs.py plot_curve log1.json log2.json --keys bbox_mAP --legend run1 run2
+更多分析方式：https://mmdetection.readthedocs.io/zh-cn/latest/user_guides/useful_tools.html
+
+训练完事看看咋样
+python tools\test.py jiyan\baseline\yolox_s_8x8_300e_coco.py jiyan\baseline\best_bbox_mAP_epoch_53.pth --show
+再瞅一眼结果
+python tools\test.py jiyan\baseline\yolox_s_8x8_300e_coco.py jiyan\baseline\best_bbox_mAP_epoch_53.pth --eval bbox/proposal（proposal效果好点）
+
+
+修改模型后需要更新配置
+pip install -e .
+python setup.py develop
+
+匹配预训练模型导入
+init_cfg=dict(
+            type='Pretrained',
+            checkpoint=
+            'S:/cv/mmdetection/checkpoints/baseline+head+eca/latest.pth')
+
+
+更新环境
+pip install -e .
+python setup.py develop
+

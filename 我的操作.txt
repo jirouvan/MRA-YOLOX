@@ -1,0 +1,13 @@
+2024/1/9
+更改了mmdet/datasets/coco.py以及mmdet/evaluation/functional/class_names.py
+中的类别信息，训练出了自己的模型
+
+2024/1/10
+我将det_inferencer.py可视化改为了显示两种图片的推理模式
+
+2024/1/18
+我将mmengine的可视化代码更改了字体，颜色，填充
+font_families: Union[str, List[str]] = 'fantasy',
+colors = (0, 0, 0)
+bboxes[0]['facecolor'] = 'none'
+

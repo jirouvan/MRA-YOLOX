@@ -1,0 +1,16 @@
+清除conda缓存
+conda clean --all
+
+conda删除虚拟环境
+假设你的环境名字叫: oct
+conda remove -n oct --all
+
+conda复制
+conda create -n 新环境 --clone 旧环境
+
+conda中的环境可以导入和导出
+导出
+conda env export > environment.yaml
+导入
+conda env create -f environment.yaml
+

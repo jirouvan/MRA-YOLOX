@@ -1,0 +1,5 @@
+G:\make\mmdetection\mmdet\evaluation\functional\class_names.py
+S:\openmmlab\mmdetection-master\mmdet\datasets\coco.py
+
+加载数据集
+load_from = './checkpoints/yolox_s_8x8_300e_coco_20211121_095711-4592a793.pth'
