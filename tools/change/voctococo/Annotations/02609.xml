@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>rice borer</folder>
+<filename>02609.jpg</filename>
+<path>C:\Users\11584\Desktop\新建文件夹\rice borer\02609.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>284</width>
+    <height>214</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>45</xmin>
+        <ymin>105</ymin>
+        <xmax>75</xmax>
+        <ymax>148</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>64</xmin>
+        <ymin>132</ymin>
+        <xmax>93</xmax>
+        <ymax>157</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>111</xmin>
+        <ymin>77</ymin>
+        <xmax>131</xmax>
+        <ymax>119</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>140</xmin>
+        <ymin>80</ymin>
+        <xmax>166</xmax>
+        <ymax>116</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>161</xmin>
+        <ymin>65</ymin>
+        <xmax>192</xmax>
+        <ymax>112</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>210</xmin>
+        <ymin>69</ymin>
+        <xmax>228</xmax>
+        <ymax>113</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>144</xmin>
+        <ymin>50</ymin>
+        <xmax>186</xmax>
+        <ymax>108</ymax>
+    </bndbox>
+</object>
+</annotation>

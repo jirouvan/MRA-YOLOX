@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>hopper</folder>
+<filename>1047h.jpg</filename>
+<path>C:\Users\11584\Desktop\数据集\hopper\1047h.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>325</width>
+    <height>201</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>38</xmin>
+        <ymin>110</ymin>
+        <xmax>103</xmax>
+        <ymax>189</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>165</xmin>
+        <ymin>29</ymin>
+        <xmax>225</xmax>
+        <ymax>100</ymax>
+    </bndbox>
+</object>
+</annotation>

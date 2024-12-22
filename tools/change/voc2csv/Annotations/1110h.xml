@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>hopper</folder>
+<filename>1110h.jpg</filename>
+<path>C:\Users\11584\Desktop\数据集\hopper\1110h.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>375</width>
+    <height>576</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>27</xmin>
+        <ymin>29</ymin>
+        <xmax>136</xmax>
+        <ymax>202</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>1</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>254</xmin>
+        <ymin>15</ymin>
+        <xmax>350</xmax>
+        <ymax>218</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>1</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>171</xmin>
+        <ymin>173</ymin>
+        <xmax>273</xmax>
+        <ymax>362</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>1</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>211</xmin>
+        <ymin>427</ymin>
+        <xmax>363</xmax>
+        <ymax>508</ymax>
+    </bndbox>
+</object>
+</annotation>

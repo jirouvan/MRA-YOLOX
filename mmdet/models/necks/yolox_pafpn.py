@@ -8,7 +8,8 @@ from mmcv.runner import BaseModule
 
 from ..builder import NECKS
 from ..utils import CSPLayer
-
+from ..utils import sa_layer
+from ..utils import eca_block
 
 @NECKS.register_module()
 class YOLOXPAFPN(BaseModule):
@@ -47,8 +48,26 @@ class YOLOXPAFPN(BaseModule):
                      a=math.sqrt(5),
                      distribution='uniform',
                      mode='fan_in',
-                     nonlinearity='leaky_relu')):
+                     nonlinearity='leaky_relu'),
+                 attention=0,):     #if attention == 0:none, elif attention == 1:as-net, elif attention == 2:eca-net
+                                    #elif attention == 3:both of as and eca
         super(YOLOXPAFPN, self).__init__(init_cfg)
+
+        # define the three attention ways
+        self.attenion = attention
+        if attention == 1:
+            self.featattention128 = sa_layer(128)
+            self.featattention256 = sa_layer(256)
+        elif attention == 2:
+            self.featattention128 = eca_block(128)
+            self.featattention256 = eca_block(256)
+        elif attention == 3:
+            self.featattention128 = sa_layer(128)
+            self.featattention256 = eca_block(256)
+
+
+        # define the three attention ways
+        self.attenion = attention
         self.in_channels = in_channels
         self.out_channels = out_channels
 
@@ -132,8 +151,38 @@ class YOLOXPAFPN(BaseModule):
             feat_heigh = self.reduce_layers[len(self.in_channels) - 1 - idx](
                 feat_heigh)
             inner_outs[0] = feat_heigh
+            # print('here is up res in')
+            # print(idx)
+            # print(feat_heigh.shape)
+            # print(feat_low.shape)
+            # add attention
+            if self.attenion == 1 or self.attenion == 2:
+                if idx == 2:
+                    feat_heigh = self.featattention256(feat_heigh)
+                    feat_low = self.featattention256(feat_low)
+                elif idx == 1:
+                    feat_heigh = self.featattention128(feat_heigh)
+                    feat_low = self.featattention128(feat_low)
+            # print('here is up res out')
+            # print(idx)
+            # print(feat_heigh.shape)
+            # print(feat_low.shape)
+
 
             upsample_feat = self.upsample(feat_heigh)
+            # print('here is up samp in')
+            # print(idx)
+            # print(upsample_feat.shape)
+            # add attention
+            if self.attenion == 1 or self.attenion == 2:
+                if idx == 2:
+                    upsample_feat = self.featattention256(upsample_feat)
+                elif idx == 1:
+                    upsample_feat = self.featattention128(upsample_feat)
+            # print('here is up samp out')
+            # print(idx)
+            # print(upsample_feat.shape)
+
 
             inner_out = self.top_down_blocks[len(self.in_channels) - 1 - idx](
                 torch.cat([upsample_feat, feat_low], 1))
@@ -144,7 +193,40 @@ class YOLOXPAFPN(BaseModule):
         for idx in range(len(self.in_channels) - 1):
             feat_low = outs[-1]
             feat_height = inner_outs[idx + 1]
+            # print('here is down res in')
+            # print(idx)
+            # print(feat_heigh.shape)
+            # print(feat_low.shape)
+            # add attention
+            if self.attenion == 1 or self.attenion == 2:
+                if idx == 0:
+                    feat_heigh = self.featattention128(feat_heigh)
+                    feat_low = self.featattention128(feat_low)
+                elif idx == 1:
+                    feat_heigh = self.featattention128(feat_heigh)
+                    feat_low = self.featattention256(feat_low)
+            # print('here is down res out')
+            # print(idx)
+            # print(feat_heigh.shape)
+            # print(feat_low.shape)
+
+
             downsample_feat = self.downsamples[idx](feat_low)
+            # print('here is down samp in')
+            # print(idx)
+            # print(downsample_feat.shape)
+            # add attention
+            if self.attenion == 1 or self.attenion == 2:
+                if idx == 0:
+                    downsample_feat = self.featattention128(downsample_feat)
+                elif idx == 1:
+                    downsample_feat = self.featattention256(downsample_feat)
+            # print('here is down samp out')
+            # print(idx)
+            # print(downsample_feat.shape)
+
+
+
             out = self.bottom_up_blocks[idx](
                 torch.cat([downsample_feat, feat_height], 1))
             outs.append(out)

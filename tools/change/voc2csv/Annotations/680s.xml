@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>spider</folder>
+<filename>680s.jpeg</filename>
+<path>D:\副本\spider\680s.jpeg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>650</width>
+    <height>650</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>165</xmin>
+        <ymin>135</ymin>
+        <xmax>483</xmax>
+        <ymax>479</ymax>
+    </bndbox>
+</object>
+</annotation>

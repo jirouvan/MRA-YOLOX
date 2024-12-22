@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>rice borer</folder>
+<filename>02049.jpg</filename>
+<path>C:\Users\11584\Desktop\新建文件夹\rice borer\02049.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>495</width>
+    <height>455</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>84</xmin>
+        <ymin>59</ymin>
+        <xmax>179</xmax>
+        <ymax>231</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>368</xmin>
+        <ymin>100</ymin>
+        <xmax>422</xmax>
+        <ymax>156</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>14</xmin>
+        <ymin>283</ymin>
+        <xmax>230</xmax>
+        <ymax>375</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>19</xmin>
+        <ymin>378</ymin>
+        <xmax>243</xmax>
+        <ymax>481</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>341</xmin>
+        <ymin>307</ymin>
+        <xmax>488</xmax>
+        <ymax>460</ymax>
+    </bndbox>
+</object>
+</annotation>

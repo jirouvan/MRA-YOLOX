@@ -17,6 +17,9 @@ from .se_layer import DyReLU, SELayer
 from .transformer import (DetrTransformerDecoder, DetrTransformerDecoderLayer,
                           DynamicConv, PatchEmbed, Transformer, nchw_to_nlc,
                           nlc_to_nchw)
+from .transformer import DeformableDetrTransformerDecoder,DeformableDetrTransformer
+from .sa_resnet import sa_layer
+from .eca import eca_block
 
 __all__ = [
     'ResLayer', 'gaussian_radius', 'gen_gaussian_target',
@@ -27,5 +30,6 @@ __all__ = [
     'SELayer', 'interpolate_as', 'ConvUpsample', 'CSPLayer',
     'adaptive_avg_pool2d', 'AdaptiveAvgPool2d', 'PatchEmbed', 'nchw_to_nlc',
     'nlc_to_nchw', 'pvt_convert', 'sigmoid_geometric_mean',
-    'preprocess_panoptic_gt', 'DyReLU'
+    'preprocess_panoptic_gt', 'DyReLU','DeformableDetrTransformerDecoder',
+    'DeformableDetrTransformer','sa_layer','eca_block',
 ]

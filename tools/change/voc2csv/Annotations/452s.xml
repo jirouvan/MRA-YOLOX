@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>spider</folder>
+<filename>452s.jpeg</filename>
+<path>D:\副本\spider\452s.jpeg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>502</width>
+    <height>231</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>329</xmin>
+        <ymin>19</ymin>
+        <xmax>381</xmax>
+        <ymax>63</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>364</xmin>
+        <ymin>113</ymin>
+        <xmax>403</xmax>
+        <ymax>157</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>136</xmin>
+        <ymin>17</ymin>
+        <xmax>181</xmax>
+        <ymax>57</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>205</xmin>
+        <ymin>2</ymin>
+        <xmax>243</xmax>
+        <ymax>29</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>215</xmin>
+        <ymin>21</ymin>
+        <xmax>255</xmax>
+        <ymax>57</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>191</xmin>
+        <ymin>177</ymin>
+        <xmax>239</xmax>
+        <ymax>203</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>151</xmin>
+        <ymin>201</ymin>
+        <xmax>179</xmax>
+        <ymax>229</ymax>
+    </bndbox>
+</object>
+</annotation>

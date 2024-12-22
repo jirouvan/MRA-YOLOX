@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>hopper</folder>
+<filename>1456h.jpg</filename>
+<path>C:\Users\11584\Desktop\数据集\hopper\1456h.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>393</width>
+    <height>166</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>49</xmin>
+        <ymin>8</ymin>
+        <xmax>371</xmax>
+        <ymax>150</ymax>
+    </bndbox>
+</object>
+</annotation>

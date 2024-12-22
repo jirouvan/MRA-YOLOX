@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>spider</folder>
+<filename>112sj.jpg</filename>
+<path>D:\副本\spider\112sj.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>382</width>
+    <height>218</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>9</xmin>
+        <ymin>73</ymin>
+        <xmax>63</xmax>
+        <ymax>144</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>64</xmin>
+        <ymin>63</ymin>
+        <xmax>100</xmax>
+        <ymax>97</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>111</xmin>
+        <ymin>104</ymin>
+        <xmax>136</xmax>
+        <ymax>141</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>147</xmin>
+        <ymin>111</ymin>
+        <xmax>167</xmax>
+        <ymax>135</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>193</xmin>
+        <ymin>83</ymin>
+        <xmax>213</xmax>
+        <ymax>101</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>243</xmin>
+        <ymin>105</ymin>
+        <xmax>295</xmax>
+        <ymax>143</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>284</xmin>
+        <ymin>139</ymin>
+        <xmax>305</xmax>
+        <ymax>155</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>284</xmin>
+        <ymin>99</ymin>
+        <xmax>328</xmax>
+        <ymax>123</ymax>
+    </bndbox>
+</object>
+</annotation>

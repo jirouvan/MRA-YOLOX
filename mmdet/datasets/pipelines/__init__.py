@@ -12,8 +12,9 @@ from .loading import (LoadAnnotations, LoadImageFromFile, LoadImageFromWebcam,
 from .test_time_aug import MultiScaleFlipAug
 from .transforms import (Albu, CutOut, Expand, MinIoURandomCrop, MixUp, Mosaic,
                          Normalize, Pad, PhotoMetricDistortion, RandomAffine,
-                         RandomCenterCropPad, RandomCrop, RandomFlip,
+                         RandomCenterCropPad, RandomCrop, RandomFlip,MAE,
                          RandomShift, Resize, SegRescale, YOLOXHSVRandomAug)
+
 
 __all__ = [
     'Compose', 'to_tensor', 'ToTensor', 'ImageToTensor', 'ToDataContainer',
@@ -21,9 +22,9 @@ __all__ = [
     'LoadImageFromFile', 'LoadImageFromWebcam', 'LoadPanopticAnnotations',
     'LoadMultiChannelImageFromFiles', 'LoadProposals', 'MultiScaleFlipAug',
     'Resize', 'RandomFlip', 'Pad', 'RandomCrop', 'Normalize', 'SegRescale',
-    'MinIoURandomCrop', 'Expand', 'PhotoMetricDistortion', 'Albu',
+    'MinIoURandomCrop', 'Expand', 'PhotoMetricDistortion', 'Albu','MAE',
     'InstaBoost', 'RandomCenterCropPad', 'AutoAugment', 'CutOut', 'Shear',
     'Rotate', 'ColorTransform', 'EqualizeTransform', 'BrightnessTransform',
     'ContrastTransform', 'Translate', 'RandomShift', 'Mosaic', 'MixUp',
-    'RandomAffine', 'YOLOXHSVRandomAug'
+    'RandomAffine', 'YOLOXHSVRandomAug',
 ]

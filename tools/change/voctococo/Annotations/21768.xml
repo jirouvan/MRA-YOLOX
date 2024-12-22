@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>peach borer</folder>
+<filename>21768.jpg</filename>
+<path>C:\Users\11584\Desktop\新建文件夹\peach borer\21768.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>870</width>
+    <height>580</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>peach borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>359</xmin>
+        <ymin>172</ymin>
+        <xmax>546</xmax>
+        <ymax>240</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>peach borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>384</xmin>
+        <ymin>400</ymin>
+        <xmax>438</xmax>
+        <ymax>497</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>peach borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>524</xmin>
+        <ymin>337</ymin>
+        <xmax>607</xmax>
+        <ymax>490</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>peach borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>667</xmin>
+        <ymin>351</ymin>
+        <xmax>754</xmax>
+        <ymax>420</ymax>
+    </bndbox>
+</object>
+</annotation>

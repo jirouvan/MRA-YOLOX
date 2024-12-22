@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>spider</folder>
+<filename>48sp.png</filename>
+<path>D:\副本\spider\48sp.png</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>98</width>
+    <height>98</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>7</xmin>
+        <ymin>-3</ymin>
+        <xmax>89</xmax>
+        <ymax>97</ymax>
+    </bndbox>
+</object>
+</annotation>

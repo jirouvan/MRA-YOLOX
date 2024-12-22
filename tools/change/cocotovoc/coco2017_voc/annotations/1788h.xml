@@ -1,0 +1,27 @@
+<annotation>
+  <folder>1</folder>
+  <filename>1788h.jpg</filename>
+  <source>
+    <database>CKdemo</database>
+    <annotation>VOC</annotation>
+    <image>CK</image>
+  </source>
+  <size>
+    <width>400</width>
+    <height>300</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>hopper</name>
+    <pose/>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>86</xmin>
+      <ymin>79</ymin>
+      <xmax>201</xmax>
+      <ymax>219</ymax>
+    </bndbox>
+  </object>
+</annotation>

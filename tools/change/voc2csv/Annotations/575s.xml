@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>spider</folder>
+<filename>575s.jpeg</filename>
+<path>D:\副本\spider\575s.jpeg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>569</width>
+    <height>235</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>29</xmin>
+        <ymin>43</ymin>
+        <xmax>247</xmax>
+        <ymax>213</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>305</xmin>
+        <ymin>27</ymin>
+        <xmax>410</xmax>
+        <ymax>169</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>438</xmin>
+        <ymin>33</ymin>
+        <xmax>510</xmax>
+        <ymax>191</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>499</xmin>
+        <ymin>11</ymin>
+        <xmax>566</xmax>
+        <ymax>107</ymax>
+    </bndbox>
+</object>
+</annotation>

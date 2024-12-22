@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>hopper</folder>
+<filename>2061h.jpg</filename>
+<path>C:\Users\11584\Desktop\数据集\hopper\2061h.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>238</width>
+    <height>200</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1</xmin>
+        <ymin>47</ymin>
+        <xmax>105</xmax>
+        <ymax>187</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>102</xmin>
+        <ymin>19</ymin>
+        <xmax>221</xmax>
+        <ymax>179</ymax>
+    </bndbox>
+</object>
+</annotation>

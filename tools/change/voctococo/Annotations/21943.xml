@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>peach borer</folder>
+<filename>21943.jpg</filename>
+<path>C:\Users\11584\Desktop\新建文件夹\peach borer\21943.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>229</width>
+    <height>175</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>peach borer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>42</xmin>
+        <ymin>43</ymin>
+        <xmax>136</xmax>
+        <ymax>220</ymax>
+    </bndbox>
+</object>
+</annotation>

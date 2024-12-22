@@ -216,5 +216,7 @@ if __name__ == '__main__':
             'optional': parse_requirements('requirements/optional.txt'),
         },
         ext_modules=[],
-        cmdclass={'build_ext': BuildExtension},
+        # cmdclass={'build_ext': BuildExtension},
+        # cmdclass['build_ext'] = cpp_extension.BuildExtension.with_options(use_ninja=False),
+        cmdclass={'build_ext': BuildExtension.with_options(use_ninja=False)},
         zip_safe=False)

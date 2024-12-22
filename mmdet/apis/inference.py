@@ -147,12 +147,12 @@ def inference_detector(model, imgs):
 
     # forward the model
     with torch.no_grad():
-        results = model(return_loss=False, rescale=True, **data)
+        results_cls,results_state,results_merge = model(return_loss=False, rescale=True, **data)
 
     if not is_batch:
-        return results[0]
+        return results_cls[0],results_state[0],results_merge[0]
     else:
-        return results
+        return results_cls,results_state,results_merge
 
 
 async def async_inference_detector(model, imgs):
@@ -212,7 +212,8 @@ async def async_inference_detector(model, imgs):
     return results
 
 
-def show_result_pyplot(model,
+def show_result_pyplot(mode,
+                       model,
                        img,
                        result,
                        score_thr=0.3,
@@ -233,13 +234,43 @@ def show_result_pyplot(model,
     """
     if hasattr(model, 'module'):
         model = model.module
-    model.show_result(
-        img,
-        result,
-        score_thr=score_thr,
-        show=True,
-        wait_time=wait_time,
-        win_name=title,
-        bbox_color=palette,
-        text_color=(200, 200, 200),
-        mask_color=palette)
+    # if mode =='cls':
+    if mode == 'state':
+        # model.CLASSES=('\nrice', '\nhopper', '\nspider', '\naphid', '\nbee', '\nbutterful', '\ncutworm', '\nlocust', '\ncricket', '\nmosquito')
+        model.CLASSES = (
+        # 'rice', 'hopper', 'spider', 'aphid', 'bee', 'butterful', 'cutworm', 'locust', 'cricket',
+        # 'mosquito'
+        'bowl', 'apple', 'mouse', 'keyboard', 'banana', 'carrot', 'cup', 'orange', 'chair', 'book'
+        )
+        model.show_result(
+            img,
+            result,
+            score_thr=score_thr,
+            show=True,
+            wait_time=wait_time,
+            win_name=title,
+            bbox_color=palette,
+            text_color=(200, 200, 200),
+            mask_color=palette,
+            thickness=10,  # bbox size
+            font_size=10,  # word size
+            out_file='./resultout1.jpg')
+    # elif mode=='state':
+    elif mode == 'cls':
+        # model.CLASSES = ('\n\n caterpillar', '\n\n reptile', '\n\n butterfly')
+        model.CLASSES = ('\n\n real', '\n\n reflected')
+        model.show_result(
+            img,
+            result,
+            score_thr=score_thr,
+            show=True,
+            wait_time=wait_time,
+            win_name=title,
+            bbox_color=palette,
+            text_color=(200, 200, 200),
+            mask_color=palette,
+            thickness=0,  # bbox size
+            font_size=10,  # word size
+            out_file='./resultout1.jpg')
+
+

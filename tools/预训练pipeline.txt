@@ -1,0 +1,24 @@
+train_pipeline = [      #数据预处理
+    dict(type='Mosaic', img_scale=(640, 640), pad_val=114.0),   #马赛克增强
+    dict(
+        type='RandomAffine', scaling_ratio_range=(0.1, 2),      #随机仿射变化，包括平移、旋转、放缩、翻转、错切等
+        border=(-320, -320)),
+    dict(
+        type='MixUp',                                           #混类增强，包括翻转Flip、旋转Rotation、缩放Scale
+        img_scale=(640, 640),                                   #随机裁剪Random Crop、随机裁剪Random Crop、模糊Gaussian Noise
+        ratio_range=(0.8, 1.6),
+        pad_val=114.0),
+    dict(type='YOLOXHSVRandomAug'),                             #随机HSV增强，色度调节
+    dict(type='RandomFlip', flip_ratio=0.5),                    #随机翻转
+    dict(type='Resize', img_scale=(640, 640), keep_ratio=True), #更改图片大小
+    dict(
+        type='Pad',                                             #填充边缘
+        pad_to_square=True,
+        pad_val=dict(img=(114.0, 114.0, 114.0))),
+    dict(type='FilterAnnotations',                              #检查标注
+         min_gt_bbox_wh=(1, 1),
+         keep_empty=False),
+    dict(type='DefaultFormatBundle'),                           #检查格式
+    dict(type='Collect',                                        #获取图片名、bbox、标签
+         keys=['img', 'gt_bboxes', 'gt_labels'])
+]

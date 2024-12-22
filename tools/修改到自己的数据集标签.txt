@@ -1,0 +1,2 @@
+S:\openmmlab\mmdetection-master\mmdet\core\evaluation\class_names.py
+S:\openmmlab\mmdetection-master\mmdet\datasets\coco.py

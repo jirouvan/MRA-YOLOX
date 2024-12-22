@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>hopper</folder>
+<filename>1500h.jpg</filename>
+<path>C:\Users\11584\Desktop\数据集\hopper\1500h.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>960</width>
+    <height>640</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>59</xmin>
+        <ymin>137</ymin>
+        <xmax>699</xmax>
+        <ymax>497</ymax>
+    </bndbox>
+</object>
+</annotation>

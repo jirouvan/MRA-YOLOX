@@ -24,7 +24,7 @@ model = dict(
     bbox_head=dict(
         type='DeformableDETRHead',
         num_query=300,
-        num_classes=80,
+        num_classes=6,
         in_channels=2048,
         sync_cls_avg_factor=True,
         as_two_stage=False,
@@ -149,12 +149,56 @@ test_pipeline = [
             dict(type='Collect', keys=['img'])
         ])
 ]
+
+data_root = '/home/lsw/new_tiny/'
+dataset_type = 'CocoDataset'
+classes = ('mouseup', 'mousedown', 'keyboardup','keboarddown','bowlup','bowldown')
+
+
+# data = dict(
+#     samples_per_gpu=1,
+#     workers_per_gpu=1,
+#     train=dict(filter_empty_gt=False,
+#                 type=dataset_type,
+#                 classes = classes,
+#                 ann_file=data_root + 'annotation/tiny_train.json',
+#                 img_prefix=data_root + 'images/',
+#                ),
+#     val=dict(
+#                 type=dataset_type,
+#                 classes = classes,
+#                 ann_file=data_root + 'annotation/tiny_val.json',
+#                 img_prefix=data_root + 'images/',
+#              ),
+#     test=dict(
+#               type=dataset_type,
+#               classes=classes,
+#               ann_file=data_root + 'annotation/tiny_val.json',
+#               img_prefix=data_root + 'images/'
+#               ))
+
+
 data = dict(
     samples_per_gpu=2,
     workers_per_gpu=2,
-    train=dict(filter_empty_gt=False, pipeline=train_pipeline),
-    val=dict(pipeline=test_pipeline),
-    test=dict(pipeline=test_pipeline))
+    train=dict(filter_empty_gt=False, pipeline=train_pipeline,
+                type=dataset_type,
+                classes = classes,
+                ann_file=data_root + 'annotation/tiny_train.json',
+                img_prefix=data_root + 'images/'
+               ),
+    val=dict(pipeline=test_pipeline,
+                type=dataset_type,
+                classes = classes,
+                ann_file=data_root + 'annotation/tiny_val.json',
+                img_prefix=data_root + 'images/'
+             ),
+    test=dict(pipeline=test_pipeline,
+               type=dataset_type,
+              classes=classes,
+              ann_file=data_root + 'annotation/tiny_val.json',
+              img_prefix=data_root + 'images/'
+              ))
 # optimizer
 optimizer = dict(
     type='AdamW',

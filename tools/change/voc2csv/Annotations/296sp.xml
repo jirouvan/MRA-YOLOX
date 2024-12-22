@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>spider</folder>
+<filename>296sp.png</filename>
+<path>D:\副本\spider\296sp.png</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>94</width>
+    <height>94</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1</xmin>
+        <ymin>1</ymin>
+        <xmax>92</xmax>
+        <ymax>61</ymax>
+    </bndbox>
+</object>
+</annotation>

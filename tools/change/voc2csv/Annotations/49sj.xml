@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>spider</folder>
+<filename>49sj.jpg</filename>
+<path>D:\副本\spider\49sj.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>399</width>
+    <height>399</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>61</xmin>
+        <ymin>13</ymin>
+        <xmax>134</xmax>
+        <ymax>78</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>260</xmin>
+        <ymin>113</ymin>
+        <xmax>308</xmax>
+        <ymax>157</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>172</xmin>
+        <ymin>149</ymin>
+        <xmax>225</xmax>
+        <ymax>201</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>174</xmin>
+        <ymin>223</ymin>
+        <xmax>220</xmax>
+        <ymax>241</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>165</xmin>
+        <ymin>289</ymin>
+        <xmax>206</xmax>
+        <ymax>343</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>202</xmin>
+        <ymin>293</ymin>
+        <xmax>260</xmax>
+        <ymax>321</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>96</xmin>
+        <ymin>310</ymin>
+        <xmax>164</xmax>
+        <ymax>353</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>12</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>113</xmin>
+        <ymin>367</ymin>
+        <xmax>173</xmax>
+        <ymax>395</ymax>
+    </bndbox>
+</object>
+</annotation>

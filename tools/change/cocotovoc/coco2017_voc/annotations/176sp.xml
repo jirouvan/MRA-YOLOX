@@ -1,0 +1,27 @@
+<annotation>
+  <folder>1</folder>
+  <filename>176sp.jpg</filename>
+  <source>
+    <database>CKdemo</database>
+    <annotation>VOC</annotation>
+    <image>CK</image>
+  </source>
+  <size>
+    <width>52</width>
+    <height>52</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>spider</name>
+    <pose/>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>0</xmin>
+      <ymin>-4</ymin>
+      <xmax>52</xmax>
+      <ymax>48</ymax>
+    </bndbox>
+  </object>
+</annotation>

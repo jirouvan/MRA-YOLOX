@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>hopper</folder>
+<filename>1505h.jpg</filename>
+<path>C:\Users\11584\Desktop\数据集\hopper\1505h.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>300</width>
+    <height>225</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>42</xmin>
+        <ymin>86</ymin>
+        <xmax>90</xmax>
+        <ymax>128</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>66</xmin>
+        <ymin>121</ymin>
+        <xmax>135</xmax>
+        <ymax>181</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>116</xmin>
+        <ymin>75</ymin>
+        <xmax>171</xmax>
+        <ymax>130</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>153</xmin>
+        <ymin>65</ymin>
+        <xmax>220</xmax>
+        <ymax>109</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>157</xmin>
+        <ymin>112</ymin>
+        <xmax>227</xmax>
+        <ymax>181</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>195</xmin>
+        <ymin>78</ymin>
+        <xmax>241</xmax>
+        <ymax>141</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>11</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>-11</xmin>
+        <ymin>137</ymin>
+        <xmax>43</xmax>
+        <ymax>182</ymax>
+    </bndbox>
+</object>
+</annotation>

@@ -70,6 +70,7 @@ class BaseDenseHead(BaseModule, metaclass=ABCMeta):
                 (n,) tensor where each item is the predicted class label of
                 the corresponding box.
         """
+
         assert len(cls_scores) == len(bbox_preds)
 
         if score_factors is None:

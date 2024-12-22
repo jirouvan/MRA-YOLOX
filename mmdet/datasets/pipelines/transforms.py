@@ -13,6 +13,23 @@ from mmdet.core import PolygonMasks, find_inside_bboxes
 from mmdet.core.evaluation.bbox_overlaps import bbox_overlaps
 from ..builder import PIPELINES
 
+
+import torch
+import matplotlib.pyplot as plt
+import time
+imagenet_mean = np.array([0.485, 0.456, 0.406])
+imagenet_std = np.array([0.229, 0.224, 0.225])
+
+
+def show_image(image, title=''):
+    # image is [H, W, 3]
+    assert image.shape[2] == 3
+    # plt.imshow(torch.clip((image * imagenet_std + imagenet_mean) * 255, 0, 255).int())
+    plt.imshow(torch.clamp((image * imagenet_std + imagenet_mean) * 255, 0, 255).int())
+    plt.title(title, fontsize=16)
+    plt.axis('off')
+    return
+
 try:
     from imagecorruptions import corrupt
 except ImportError:
@@ -286,6 +303,7 @@ class Resize:
                 'keep_ratio' keys are added into result dict.
         """
 
+
         if 'scale' not in results:
             if 'scale_factor' in results:
                 img_shape = results['img'].shape[:2]
@@ -309,6 +327,7 @@ class Resize:
         self._resize_bboxes(results)
         self._resize_masks(results)
         self._resize_seg(results)
+
         return results
 
     def __repr__(self):
@@ -318,6 +337,57 @@ class Resize:
         repr_str += f'ratio_range={self.ratio_range}, '
         repr_str += f'keep_ratio={self.keep_ratio}, '
         repr_str += f'bbox_clip_border={self.bbox_clip_border})'
+        return repr_str
+
+
+@PIPELINES.register_module()
+class MAE:
+    """Apply HSV augmentation to image sequentially. It is referenced from
+    https://github.com/Megvii-
+    BaseDetection/YOLOX/blob/main/yolox/data/data_augment.py#L21.
+
+    Args:
+        hue_delta (int): delta of hue. Default: 5.
+        saturation_delta (int): delta of saturation. Default: 30.
+        value_delta (int): delat of value. Default: 30.
+    """
+
+    def __init__(self, hue_delta=5, saturation_delta=30, value_delta=30):
+        self.hue_delta = hue_delta
+        self.saturation_delta = saturation_delta
+        self.value_delta = value_delta
+
+
+
+    def __call__(self, results):
+        img = results['img']
+
+        [x,y,z] = img.shape
+        # re=plt.read(img)
+        # cv2.imshow('imgstart', img)
+        # cv2.waitKey(3000)
+        # cv2.destroyAllWindows()
+        ################################################################################################################
+#add the MAE pipeline
+        img = cv2.resize(img,dsize=(224,224),fx=1,fy=1,interpolation=cv2.INTER_LINEAR)
+#add attention mask
+
+#add MAE process
+
+        ################################################################################################################
+        img = cv2.resize(img, dsize=(y, x), fx=1, fy=1, interpolation=cv2.INTER_LINEAR)
+        # cv2.imshow('imgend', img)
+        # cv2.waitKey(3000)
+        # cv2.destroyAllWindows()
+        results['img'] = img
+        return results
+
+
+    def __repr__(self):
+        repr_str = self.__class__.__name__
+        repr_str += f'(hue_delta={self.hue_delta}, '
+        repr_str += f'saturation_delta={self.saturation_delta}, '
+        repr_str += f'value_delta={self.value_delta})'
         return repr_str
 
 
@@ -400,15 +470,15 @@ class RandomFlip:
 
         assert bboxes.shape[-1] % 4 == 0
         flipped = bboxes.copy()
-        if direction == 'horizontal':
+        if direction == 'horizontal':   #默认宽的翻转
             w = img_shape[1]
             flipped[..., 0::4] = w - bboxes[..., 2::4]
             flipped[..., 2::4] = w - bboxes[..., 0::4]
-        elif direction == 'vertical':
+        elif direction == 'vertical':   #还可以进行高的翻转
             h = img_shape[0]
             flipped[..., 1::4] = h - bboxes[..., 3::4]
             flipped[..., 3::4] = h - bboxes[..., 1::4]
-        elif direction == 'diagonal':
+        elif direction == 'diagonal':   #高宽同时翻转
             w = img_shape[1]
             h = img_shape[0]
             flipped[..., 0::4] = w - bboxes[..., 2::4]
@@ -472,6 +542,7 @@ class RandomFlip:
             for key in results.get('seg_fields', []):
                 results[key] = mmcv.imflip(
                     results[key], direction=results['flip_direction'])
+
         return results
 
     def __repr__(self):
@@ -653,6 +724,7 @@ class Pad:
         Returns:
             dict: Updated result dict.
         """
+
         self._pad_img(results)
         self._pad_masks(results)
         self._pad_seg(results)
@@ -2212,6 +2284,7 @@ class Mosaic:
         return repr_str
 
 
+
 @PIPELINES.register_module()
 class MixUp:
     """MixUp data augmentation.
@@ -2712,6 +2785,11 @@ class YOLOXHSVRandomAug:
 
     def __call__(self, results):
         img = results['img']
+
+        # cv2.imshow('read_img', img)
+        # cv2.waitKey(3000)
+        # cv2.destroyAllWindows()
+
         hsv_gains = np.random.uniform(-1, 1, 3) * [
             self.hue_delta, self.saturation_delta, self.value_delta
         ]
@@ -2725,8 +2803,12 @@ class YOLOXHSVRandomAug:
         img_hsv[..., 1] = np.clip(img_hsv[..., 1] + hsv_gains[1], 0, 255)
         img_hsv[..., 2] = np.clip(img_hsv[..., 2] + hsv_gains[2], 0, 255)
         cv2.cvtColor(img_hsv.astype(img.dtype), cv2.COLOR_HSV2BGR, dst=img)
-
         results['img'] = img
+
+        # cv2.imshow('read_img2',results['img'])
+        # cv2.waitKey(3000)
+        # cv2.destroyAllWindows()
+
         return results
 
     def __repr__(self):

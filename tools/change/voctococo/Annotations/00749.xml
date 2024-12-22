@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>rice left</folder>
+<filename>00749.jpg</filename>
+<path>C:\Users\11584\Desktop\新建文件夹\rice left\00749.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>580</width>
+    <height>501</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>103</xmin>
+        <ymin>93</ymin>
+        <xmax>526</xmax>
+        <ymax>401</ymax>
+    </bndbox>
+</object>
+</annotation>

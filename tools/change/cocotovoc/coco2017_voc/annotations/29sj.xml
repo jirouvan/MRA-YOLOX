@@ -1,0 +1,27 @@
+<annotation>
+  <folder>1</folder>
+  <filename>29sj.jpg</filename>
+  <source>
+    <database>CKdemo</database>
+    <annotation>VOC</annotation>
+    <image>CK</image>
+  </source>
+  <size>
+    <width>629</width>
+    <height>488</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>spider</name>
+    <pose/>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>19</xmin>
+      <ymin>43</ymin>
+      <xmax>596</xmax>
+      <ymax>476</ymax>
+    </bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>rice left</folder>
+<filename>00611.jpg</filename>
+<path>C:\Users\11584\Desktop\新建文件夹\rice left\00611.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>859</width>
+    <height>569</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>281</xmin>
+        <ymin>258</ymin>
+        <xmax>321</xmax>
+        <ymax>380</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>229</xmin>
+        <ymin>238</ymin>
+        <xmax>248</xmax>
+        <ymax>310</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>226</xmin>
+        <ymin>77</ymin>
+        <xmax>303</xmax>
+        <ymax>179</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>197</xmin>
+        <ymin>339</ymin>
+        <xmax>247</xmax>
+        <ymax>433</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>271</xmin>
+        <ymin>413</ymin>
+        <xmax>292</xmax>
+        <ymax>479</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>146</xmin>
+        <ymin>428</ymin>
+        <xmax>178</xmax>
+        <ymax>501</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>150</xmin>
+        <ymin>320</ymin>
+        <xmax>192</xmax>
+        <ymax>381</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>rice left</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>245</xmin>
+        <ymin>19</ymin>
+        <xmax>298</xmax>
+        <ymax>63</ymax>
+    </bndbox>
+</object>
+</annotation>
